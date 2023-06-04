@@ -1,8 +1,14 @@
 import photo from "../assets/react.svg"
+import { useState } from "react";
 
 const Product = (props) => {
+    function passTheProduct(id){
+        props.passTheProduct(id)
+    }
     return ( 
-        <div className="bg-white w-[30%] h-[60%] mb-5 mt-5 flex flex-col cursor-pointer justify-center items-center rounded-sm border-solid border-2 border-green-300">
+        <div className="bg-white w-[30%] h-[60%] mb-5 mt-5 flex flex-col cursor-pointer justify-center items-center rounded-sm border-solid border-2 border-green-300" onClick={
+            ()=>passTheProduct(props.idSample)
+        }>
             <div className=" w-[90%] h-[50%] flex justify-center items-center">
               <img src={props.image} className=" h-[100%] w-[100%]" alt="The product image"></img>
             </div>
