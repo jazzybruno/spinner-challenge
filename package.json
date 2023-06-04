@@ -13,9 +13,13 @@
     "@mui/material": "^5.13.3",
     "@mui/styled-engine-sc": "^5.12.0",
     "axios": "^1.4.0",
+    "gsap": "^3.11.5",
     "react": "^18.2.0",
+    "react-customizable-progressbar": "^1.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
+    "react-range": "^1.8.14",
+    "react-rangeslider": "^2.2.0",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
