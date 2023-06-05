@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../assets/someCss.css";
 import { FiRefreshCcw } from "react-icons/fi";
-import Slider from "react-rangeslider";
 
 const Spinner = (props) => {
   const [percent, setPercent] = useState(80);
@@ -160,17 +159,6 @@ const Spinner = (props) => {
             </div>
             <div className="pt-5 pb-5 w-[95%]">
               <div className="w-full mt-4">
-              <div className="slider">
-              <Slider
-        min={0}
-        max={100}
-        value={value}
-        onChangeStart={handleChangeStart}
-        onChange={handleChange}
-        onChangeComplete={handleChangeComplete}
-      />
-      <div className='value'>{value}</div>
-              </div>
               </div>
             </div>
           </div>
